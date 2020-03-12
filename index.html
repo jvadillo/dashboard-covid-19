@@ -558,9 +558,11 @@
 
       $(document).ready(function () {
 
+        let fecha = getDateStr();
+        let URL = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/"+fecha+".csv";
 
         $.ajax({
-          url: "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/03-09-2020.csv",
+          url: URL,
           dataType: "text",
           success: function (data) {
             var deaths = 0;
