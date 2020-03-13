@@ -21,7 +21,7 @@ $(document).ready(function () {
             field: "Confirmed",
             symbol: {
                 type: "simple-marker",
-                color: "#fc3131",
+                color: "#4299e1",
                 outline: {
                     color: "white"
                 }

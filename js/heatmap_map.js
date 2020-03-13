@@ -27,6 +27,7 @@ $(document).ready(function () {
 
         const heatmap_renderer = {
           type: "heatmap",
+          colors: ["#472b77","#563098","#7139d4","#e0cf40","#ffff00"],
           /*colorStops: [
             { color: "rgba(63, 40, 102, 0)", ratio: 0 },
             { color: "#472b77", ratio: 0.083 },

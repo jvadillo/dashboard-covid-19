@@ -10,7 +10,7 @@ $(document).ready(function () {
             var employee_data = data.split(/\r?\n|\r/);
             var table_data = '<table class="w-full p-5 text-gray-700">';
                 table_data += '<tr>';
-                table_data += '<th>País (excepto China y USA)</th><th class="text-red-500">Confirmados</th><th class="text-black-700">Muertes</th><th class="text-green-500">Recuperados</th>';
+                table_data += '<th>País (excepto China y USA)</th><th class="text-blue-500">Confirmados</th><th class="text-blue-900">Muertes</th><th class="text-green-500">Recuperados</th>';
                 table_data += '<tr>';
             //for(var count = 0; count<employee_data.length; count++)
             for (var count = 0; count < 50; count++) //TOP 20

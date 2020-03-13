@@ -52,15 +52,15 @@ function createStackedChart(paises, confirmed, deaths, recovered) {
         series: [{
             name: 'Confirmados',
             data: confirmed,
-            color: '#fc3131'
+            color: '#4299e1'
         }, {
             name: 'Muertes',
             data: deaths,
-            color: '#292929'
+            color: '#2a4365'
         }, {
             name: 'Recuperados',
             data: recovered,
-            color: '#64b448'
+            color: '#48bb78'
         }]
     });
 }
