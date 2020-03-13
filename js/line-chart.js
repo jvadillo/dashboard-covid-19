@@ -70,8 +70,8 @@ $(document).ready(function () {
             for (var count = 0; count < world_data.length; count++) {
                 var cell_data = splitCsv(world_data[count]);  // Convierte un string tipo CSV a array
                 cell_data = cell_data || [];
-                // Vamos introduciendo todas las fechas en el array del eje X
-                for (var cell_count = 4; cell_count < cell_data.length; cell_count++) {
+                // Vamos introduciendo todas las fechas en el array del eje X. Emepezamos en el 24 porque no queremos los primeros dias.
+                for (var cell_count = 24; cell_count < cell_data.length; cell_count++) {
                     ejeX.push(cell_data[cell_count]);
                 }
             }
@@ -88,7 +88,8 @@ $(document).ready(function () {
                 var name = cell_data[1];
                 //console.log(name);
                 if (paises.includes(name)) {
-                    for (var cell_count = 4; cell_count < cell_data.length; cell_count++) {
+                    // Emepezamos en el 24 porque no queremos los primeros dias.
+                    for (var cell_count = 24; cell_count < cell_data.length; cell_count++) {
                         series[count - 1].push(parseInt(cell_data[cell_count]));
                     }
                     //console.log(series[count-1]);
